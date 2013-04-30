@@ -1,0 +1,127 @@
+
+body, .toggle h3 a, .bar_graph li span strong, #search-results .result .title span
+{	
+			
+			}
+
+
+
+
+header#top nav > ul > li > a
+{	
+		
+			}
+
+
+
+
+
+header#top .sf-menu li ul li a
+{	
+				
+			}
+
+
+@media only screen 
+and (min-width : 1px) and (max-width : 1000px) 
+{
+  header#top .sf-menu a {
+  	font-family: -!important;
+  	font-size: 14px!important;
+  }
+}
+
+
+
+
+#featured article .post-title h2 span, blockquote
+{	
+		
+			}
+
+
+
+
+
+h1, h2, h3, h4, h5, h6, .row .col.section-title h1, .row .col.section-title h2, #call-to-action span, header#top #logo, #error-404 h1, #error-404 h2, #page-header-bg h1,
+article.post .post-header h1, article.post .post-header h2, article.post.quote .post-content h2, article.post.link .post-content h2
+{	
+			}
+
+body h1, article.post .post-header h1, .row .col.section-title h1 {
+	font-size: 30px;
+	line-height: 30px;
+}
+
+#page-header-bg h1 {
+	font-size: 49px;
+	line-height: 49px;
+}
+
+body h2, article.post .post-header h2, #call-to-action .container span {
+    font-size: 24px;
+	line-height: 24px;
+}
+
+.row .col h2, #search-results .result h2 {
+	font-size: 24px;
+	line-height: 27px;
+}
+
+article.post.quote .post-content h2, article.post.link .post-content h2 {
+	font-size: 24px;
+ 	line-height: 29px;
+}
+
+body h3 {
+    font-size: 21px;
+	line-height: 21px;
+}
+body h4 {
+    font-size: 18px;
+	line-height: 18px;
+}
+body h5 {
+    font-size: 16px;
+	line-height: 16px;
+}
+body h6 {
+    font-size: 15px;
+	line-height: 15px;
+}
+   
+
+header#top #logo 
+{
+	line-height: 22px!important;
+}
+
+article.post .post-meta .day 
+{	
+	}
+
+
+
+
+
+#footer-outer .widget h4, #sidebar h4, #call-to-action .container a, .uppercase, .nectar-button
+{	
+					
+		}
+
+
+
+
+.team-member h3, .row .col.section-title p, .row .col.section-title span, #page-header-bg .subheader
+{	
+				
+				
+}
+
+
+article.post .post-meta .month 
+{
+	line-height: -6px!important;
+}
+
+
