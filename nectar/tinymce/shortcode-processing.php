@@ -574,7 +574,8 @@ function nectar_recent_projects($atts, $content = null) {
 				
 				<?php if(have_posts()) { 
 
-					$recent_projects_content = '<div class="carousel-heading">'.$title_label_output .'
+					$recent_projects_content = '<div class="carousel-heading">
+						<h2 class="uppercase">Recent Work / <a href="portfolio" class="button">View all work</a></h2>
 						<a class="carousel-prev" href="#"></a>
 				    	<a class="carousel-next" href="#"></a>
 					</div>
@@ -614,11 +615,11 @@ function nectar_recent_projects($atts, $content = null) {
 					
 					//image
 				    else {
-				       $media .= '<a href="'. $featured_image[0].'" class="pp">'.__("View Larger", NECTAR_THEME_NAME).'</a> ';
+				       //$media .= '<a href="'. $featured_image[0].'" class="pp">'.__("View Larger", NECTAR_THEME_NAME).'</a> ';
 				    }
 					
 					if(!empty($options['portfolio_date']) && $options['portfolio_date'] == 1) $date = get_the_time('F d, Y');
-								
+					$date = ""; //remove date			
 					$project_img = '<img src="'.get_template_directory_uri().'/img/no-portfolio-item-small.jpg" alt="no image added yet." />';
 					if ( has_post_thumbnail() ) { $project_img = get_the_post_thumbnail($post->ID, 'portfolio-thumb', array('title' => '')); } 
 					
