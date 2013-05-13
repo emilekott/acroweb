@@ -10,19 +10,17 @@
 					<h1><?php wp_title("",true); ?></h1>
 					
 					<div id="single-below-header">
-						<?php echo __('Posted by', NECTAR_THEME_NAME); ?> <?php the_author_posts_link(); ?> | <?php the_category(', '); ?> | <a href="<?php comments_link(); ?>">
-						<?php comments_number( __('No Comments', NECTAR_THEME_NAME), __('One Comment ', NECTAR_THEME_NAME), __('% Comments', NECTAR_THEME_NAME) ); ?></a>
+						<?php echo __('Posted by', NECTAR_THEME_NAME); ?> <?php the_author_posts_link(); ?> | <?php the_category(', '); ?>
+                                                <div class="clear social">
+                                                <div class="g-plusone" data-size="medium" data-href="<?php the_permalink(); ?>"></div>
+                                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>" data-hashtags="acroweb">Tweet</a>
+                                                <div class="fb-like" data-href="<?php the_permalink(); ?>" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false"></div>
+                                                </div>
 					</div><!--/single-below-header-->
 					
 					<div id="single-meta">
 						<ul>
-							<li>
-								<div class="nectar-love-wrap">
-									<?php if( function_exists('nectar_love') ) nectar_love(); ?>
-								</div><!--/nectar-love-wrap-->
-							</li>
-							
-							<li>
+                                                        <li>
 								<?php the_time('F d, Y'); ?>
 							</li>
 						</ul>

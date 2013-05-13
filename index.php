@@ -3,7 +3,6 @@
 <?php nectar_page_header($post->ID); ?>
 
 <div class="container main-content">
-	
 	<?php if(!is_home()) { ?>
 		<div class="row">
 			<div class="col span_12 section-title blog-title">

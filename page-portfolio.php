@@ -172,8 +172,8 @@ $span_num = (!empty($cols) && $cols == '3') ? '4' : '3';
 						    else {
 						       //echo '<a href="'. $featured_image[0].'" class="pp">'.__("View Larger", NECTAR_THEME_NAME).'</a> ';
 						    }
-							
-						    echo '<a href="' . get_permalink() . '">'.__("More Details", NECTAR_THEME_NAME).'</a>'; ?>
+						    $title = get_the_title($post->ID);
+						    echo '<a href="' . get_permalink() . '">'.__($title, NECTAR_THEME_NAME).'</a>'; ?>
 						    
 						</div><!--/vert-center-->
 						
@@ -181,17 +181,13 @@ $span_num = (!empty($cols) && $cols == '3') ? '4' : '3';
 				</div><!--work-item-->
 				
 				<div class="work-meta">
-					<h4 class="title"><?php the_title(); ?></h4>
 					
-					<?php 
-						//if(!empty($options['portfolio_date']) && $options['portfolio_date'] == 1) the_time('F d, Y');
-					?>
+					
+			
+		
 
 				</div>
-				<div class="nectar-love-wrap">
-					<?php if( function_exists('nectar_love') ) nectar_love(); ?>
-				</div><!--/nectar-love-wrap-->	
-			
+				
 			</div><!--/col-->
 			
 		<?php endwhile; endif; ?>

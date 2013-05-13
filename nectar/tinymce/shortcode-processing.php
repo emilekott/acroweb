@@ -629,7 +629,7 @@ function nectar_recent_projects($atts, $content = null) {
 					if( !empty($custom_thumbnail) ){
 						$project_img = '<img class="custom-thumbnail" src="'.$custom_thumbnail.'" alt="'. get_the_title() .'" />';
 					}
-					
+					$title = get_the_title($post->ID);
 					
 					$recent_projects_content .='<li class="col span_4">
 						
@@ -640,19 +640,14 @@ function nectar_recent_projects($atts, $content = null) {
 								
 								<div class="vert-center">' . $media . '
 		
-								<a href="' . get_permalink() . '">'.__("More Details", NECTAR_THEME_NAME).'</a>
+								<a href="' . get_permalink() . '">'.__($title, NECTAR_THEME_NAME).'</a>
 	
 								</div><!--/vert-center-->
 								
 							</div>
 						</div><!--work-item-->
 						
-						<div class="work-meta">
-							<h4 class="title"> '. get_the_title() .'</h4>
-							'.$date.'
-						</div><div class="nectar-love-wrap">
 						
-						'.$love.'</div>
 						
 						<div class="clear"></div>
 						

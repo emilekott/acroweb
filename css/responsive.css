@@ -443,6 +443,7 @@ and (max-width : 690px) {
 	
 	body .orbit-wrapper #featured article .post-title {
   		top: 120px!important;
+                left:30px;
   	}
   	
   	
@@ -865,7 +866,7 @@ and (min-width : 1px) and (max-width : 1000px) {
   	
   	.orbit-wrapper #featured article .post-title {
   		top: 170px!important;
-  		left: 0px;
+  		left: 140px;
   	}
   	
   	.orbit-wrapper div.slider-nav span {
@@ -943,5 +944,11 @@ and (min-width : 1px) and (max-width : 1000px) {
 	.main-content > div {
 		padding-bottom: 0px;
 	}
+        
+        .social{
+            float: left;
+            margin: 0;
+            padding: 0 !important;
+        }   
 	
 }

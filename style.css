@@ -305,12 +305,22 @@ p {
 blockquote {
 	font-family: 'OpenSansLight';
 	line-height: 30px;
-	font-size: 22px;
+	font-size: 18px;
 	padding-left: 50px;
 	margin-bottom: 30px;
 	background-repeat: no-repeat;
 	background-position: left 3px;
 	background-image: url(img/icons/quotes.png);
+}
+blockquote.alignleft {
+    margin: 10px 20px 0 0;
+    width: 220px;
+    float:left;
+}
+blockquote.alignright {
+margin: 10px 0 0 20px;
+width: 220px;
+float: right;
 }
 
 .main-content ul, .main-content ol {
@@ -607,6 +617,10 @@ header#top #toggle-nav {
 	margin-bottom: 12px;
 }
 
+.carousel-heading h2, .carousel-wrap h2{
+    font-size: 12px !important;
+}
+
 .row .col h2 {
 	font-size: 22px;
 	line-height: 25px;
@@ -700,7 +714,8 @@ body #mobile-menu li.open > a [class^="icon-"] {
 }
 
 .row .col.section-title.project-title, .row .col.section-title.blog-title {
-	margin-bottom: 1.1em;
+	margin-bottom: 0;
+        padding: 0;
 }
 
 .home .row .col.section-title {
@@ -2228,7 +2243,7 @@ html:not(.js) .page-template-page-portfolio-php #portfolio.portfolio-items .col.
 
 #project-meta {
 	height: 21px;
-	margin-bottom: 30px!important;
+	margin: 6px 0 20px 0 !important;
 }
 
 #project-meta ul {
@@ -2242,9 +2257,7 @@ html:not(.js) .page-template-page-portfolio-php #portfolio.portfolio-items .col.
 }
 
 #project-meta ul li .nectar-love-wrap {
-	border-right: 1px solid #ddd;	
-	margin-right: 20px;
-	padding-right: 20px;
+
 	width: auto!important;
 }
 
@@ -3639,7 +3652,7 @@ article.post .post-content {
 
 .single #single-meta {
 	position: absolute;
-	top: 21px; 
+	top: 14px; 
 	right: 0px;
 	height: 21px;
 }
@@ -4186,4 +4199,22 @@ textarea {
 
 label span {
 	color: #27CFC3;
+}
+
+
+
+.social{
+    float: right;
+    margin: 10px;
+    padding: 0 !important;
+}
+
+.gform_wrapper ul li.gfield {
+clear: both;
+margin-bottom: 1em;
+}
+
+.gform_wrapper .top_label li.gfield.gf_left_half {
+margin: 0 0 16px 0;
+width: 49%;
 }

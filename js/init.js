@@ -203,8 +203,9 @@ jQuery(document).ready(function($){
 	if( isNaN(headerPadding) ) { headerPadding = 28; headerPadding2 = 28;}
 	if( headerResize.length == 0 ) {headerPadding2 = headerPadding*2; extraDef = 0;}
 
-	var $captionPos = (((sliderHeight-70)/2 - $('div.slider-nav span.left span.white').height()/2) + logoHeight + headerPadding*2 + extraHeight) - 85;
-	var $controlsPos = (((sliderHeight-70)/2 - $('div.slider-nav span.left span.white').height()/2) + logoHeight + headerPadding*2 + extraHeight) -10;
+	//var $captionPos = (((sliderHeight-70)/2 - $('div.slider-nav span.left span.white').height()/2) + logoHeight + headerPadding*2 + extraHeight) - 85;
+	var $captionPos = ((175 - $('div.slider-nav span.left span.white').height()/2) + logoHeight + headerPadding*2 + extraHeight) - 85;
+        var $controlsPos = (((sliderHeight-70)/2 - $('div.slider-nav span.left span.white').height()/2) + logoHeight + headerPadding*2 + extraHeight) -10;
 	
 	var $scrollTop;
 	
