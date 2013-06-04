@@ -14,7 +14,9 @@
 					?>
 				</div><!--/date-->
 				
-				
+				<div class="nectar-love-wrap">
+					<?php if( function_exists('nectar_love') ) nectar_love(); ?>
+				</div><!--/nectar-love-wrap-->	
 							
 			</div><!--/post-meta-->
 		
